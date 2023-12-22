@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!
+SOURCE Link: https://supersimple.dev/exercises/text
+HTML Entity: special characters like tick mark (checklist), dot, greater/less than
+MARGIN = Space between texts in various directions
+
+CSS SPECIFICITY: Default properties in "p" can be replaced by specific paragraphs in their respective section of the code
+SELECTOR - "p", ".video-title", ".video-stats", ".video-author", ".video-description"
+CSS SPECIFICITY+SELECTOR: The Selector that is more specific has higher priority
+  (In terms of priority) CLASS NAME SELECTOR (.video-title) (is greater than) Element Name Selector (p)
+    NOTE: It does NOT matter if the class name selector is above or below than the element name selector
+
+TEXT ELEMENT: Exists within a text (paragraph "p" tag) and modifies a specific part of the text only
+  Examples include "strong" tag for bold, "u" for underline, "span" for no visible style - all they have CLOSING TAGS
+
+Use "margin-left", "margin-right" to add required spaces between the text
+Use "style" tag to write CSS code inside HTML file
+Right Click on this space = Click on "Open With Live Server" for live execution of code in the browser without the need of reloading browser again & again
+>
+
+
+<html>
+  <head>
+    <title>Text Practice</title>
+
+    <!Loaded additional fonts from fonts.google.com - search "Roboto", select styles (2) here, copy code, paste here
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "text.css"> <!CSS Code in HTML file>
+  </head>
+
+  <body>
+
+    <p class = "video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    
+    <p class = "video-stats">
+      3.4M views &middot; 6 months ago <!&middot = HTML ENTITY>
+    </p>
+    
+    <p class = "video-author">
+      Marques Brownlee &check;
+    </p>
+    
+    <p class = "video-description">
+      Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+    </p>
+    
+    <p class = "apple-text">
+      Shop early for the best selection of holiday favourites. <span class = "shop-link"> Shop now &gt; </span>
+    </p>
+
+  </body>
+</html>

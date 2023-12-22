@@ -1,0 +1,39 @@
+/*"sidebar" is a CLASS SELECTOR*/
+
+.sidebar{
+  position: fixed; /*to make it stick to screen*/
+  left: 0; /*stick to left*/
+  bottom: 0; /*stick to bottom*/
+  top: 55px; /*stretch to top*/
+  background-color: white;
+  width: 72px; /*fixed width - NOT resizable*/
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link{
+  height: 74px;
+  margin-bottom: 1px;
+  display: flex; /*to align items vertically properly, use FLEXBOX*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*causes elements to display vertically*/
+  /*"flex-direction" is used after "justify-content" and "align-items" so that "flex-direction=row" applies to above two*/
+
+  cursor: pointer;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(235,235,235);  
+}
+
+/*another way of targeting all images inside "sidebar-link" SELECTOR - "img" is a tag - ADVANCED CSS SELECTOR*/
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}

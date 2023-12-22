@@ -1,0 +1,16 @@
+/*general attributes applies to all of a particular category*/
+
+p { /*The p selector is used to target HTML <p> (paragraph) elements*/
+
+  font-family: Roboto, Arial; /*font-stack = if "Roboto" fails, backup - Arial is there*/
+  margin-top: 0;
+  margin-bottom: 0; /*to get rid of default margin*/
+}
+
+body { /*applies to all body elements (by default)-individual body element can overwrite depending on respective requirements*/
+  margin: 0;
+  padding-top: 80px; /*space between header & body content*/
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+}

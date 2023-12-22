@@ -1,0 +1,56 @@
+p { 
+  /*Element Name Selector - Applies to all below paragraphs, no need of writing individually in each paragraph*/
+    
+    /*"Roboto" font has been loaded to the linked HTML file from Google*/
+    font-family: Roboto; /*font type; default = Times New Roman*/
+    margin-top: 0;
+    margin-bottom: 0; /*DEFAULT; can be replaced by individual paragraphs in their respective code section - CSS SPECIFICITY*/
+  }
+
+  .video-title{ /*Higher priority than "p" as it targets a specific class - CLASS NAME SELECTOR*/
+    font-size: 18px;
+    font-weight: bold; /*
+    font-style: italic; 
+    text-align: center; */
+    width: 280px; /*to move some part of text to another line*/
+    line-height: 24px; /*Spacing between lines*/
+    margin-top: 135px;
+    margin-bottom: 5px; /*CSS SPECIFICITY*/
+  }
+
+  .video-stats{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-bottom: 20px;
+  }
+
+  .video-author{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-bottom: 20;
+  }
+
+  .video-description{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    width: 280px;
+    line-height: 22px;
+    margin-bottom: 100px;
+  }
+
+  .apple-text{
+    margin-bottom: 50px;
+    background-color: rgb(227, 65, 64);
+    color: rgb(255,255,255);
+    font-size: 14px;/*
+    padding-left: 510px;*/
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+
+
+  .shop-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }

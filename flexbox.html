@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!Time Stamp To Start: 3:57:40>
+
+<!FLEXBOX is similar to CSS Grid but it is more flexible
+- LAYOUT for GRID is more rigid than FLEXBOX whose layout is flexible
+- In GRID, box dimension (width) is defined before defining each "div", so even if boxes are changed, dimensions remain constant (RIGID)
+- In FLEXBOX, if boxes are changed, dimensions (widths) also change as they are within "div" definition
+- By default, "div" is a BLOCK - need to make it a FLEXBOX by writing code
+- Using flex: 1/2, makes the box flexible (uses remaining space)-also flexible if size of window is altered>
+
+
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+
+  <body style = "padding-bottom: 1000px;">
+    <!the below div is a "container" of all "flexbox">
+
+    <div style = "
+      display: flex;
+       flex-direction: row;">
+
+      <!Align elements in a horizontal layout - behave as INLINE-BLOCK ELEMENT (consumes only required space)
+      - THIS DISTINGUISHES IT FROM GRID which consumes all allocated spaces
+      - like grid, flexbox also maintains vertical alignment with other box (extra text in a neighboring box causes other box also to increase space to align with neighbor
+      - FLEXIBLE- when length of text is increased, flexbox size increases to accomodate the increment>
+
+      <div style = "
+        background-color: lightblue;
+      ">div 1 text</div>
+      
+      <div style = "
+        background-color: lightpink;
+      ">div 2</div>
+    </div>
+
+
+
+    <div style = "
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row; 
+    ">
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      
+      <div style = "
+        background-color: lightpink;
+      ">flex: 1</div>
+    </div>
+
+
+
+    <div style = "
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row; 
+    ">
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      
+      <div style = "
+        background-color: lightpink;
+        flex: 1
+      ">flex: 1</div>
+
+      <div style = "
+        background-color: lightblue;
+        flex: 2
+      ">flex: 2</div>
+    </div>
+
+
+    <div style = "
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gary;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    ">
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      
+      <div style = "
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+  </div>
+
+
+
+  <div style = "
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row; /*Align elements in a horizontal layout*/
+      justify-content: space-between; /*equal amount of space in between boxes*/
+      align-items: stretch; /*stretch to cover entire vertical spaces | OPTIONS: center, start, end*/
+  ">
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      
+      <div style = "
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+
+      <div style = "
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+  </div>
+
+
+  <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*if center, all boxes come together at center- now has space between boxes*/
+    align-items: center; /*all items follow center alignment*/
+  ">
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+  </div>
+
+
+  </body>
+</html>

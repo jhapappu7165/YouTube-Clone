@@ -1,0 +1,108 @@
+.subscribe-button { /*target SUBSCRIBE button - write "button" for default with no specific target*/
+    
+  background-color: rgb(204, 0, 0); /*rgb = way of measuring colour - how much red(208), green(3), blue(3) we have in this colour (min-0, max-255)*/
+  color: white; /*TEXT COLOUR - rgb(255, 255, 255) = white, rgb(0, 0, 0) = black*/
+  border: none; /*border - yes or no - DEFAULT - Yes*/
+  height: 36px;
+  width: 105px; /*overall box width - not just border*/
+  border-radius: 2px; /*higher pixel, more round border corner*/
+  cursor: pointer; /*when mouse pointer is on button, it changes to 'hand' like cursor*/
+  margin-right: 12px;  /*MARGIN = Space between boxes in various directions*/
+  transition: opacity 0.15s; /*transition of opacity between hovering & out of hovering happens in this period(smoothly); DEFAULT=instant*/
+  vertical-align: top; /*align all boxes to the top so all align on one straight line*/
+}
+
+/*When not hovering over button, above styles apply - when hovering, below ones apply*/
+
+
+.subscribe-button:hover{    /*PSEUDO-CLASS (hover) = add extra styles in certain situation - HOVER*/
+
+  /*background-color: green;*/
+  opacity: 0.8;   /*(0-1) => 0(fully lost), 1(normal - fully seen)-decreasing opacity causes elements to FADE OUT*/
+}
+
+
+.subscribe-button:active{   /*PSEUDO-CLASS (active) = add extra styles when button is clicked*/
+
+/*background-color: blue;*/
+opacity: 0.5;
+}
+
+
+
+.join-button {
+
+  background-color: white; 
+  border-color: rgb(41, 118, 211);
+  border-style: solid; /*bold colored border*/
+  border-width: 1px; /*increase cause border color thickens*/
+  color: rgb(0, 0, 236); /*TEXT COLOUR*/
+  height: 36px;
+  width: 62px;
+  font-size: 14px; 
+  border-radius: 2px; 
+  cursor: pointer; 
+  transition: background-color 0.15s, color 0.15s;
+  vertical-align: top;
+}
+
+
+.join-button:hover{
+  background-color: rgb(41, 118, 211);
+  color: white;
+
+  /*if CSS property called "transition" is used in "hover", only applies when hovering in, NOT out*/
+}
+
+
+.join-button:active{
+  opacity: 0.7;
+}
+
+
+
+.tweet-button {
+
+  background-color: rgb(29, 155, 240); 
+  border: none;
+  color: rgb(255, 255, 255); /*TEXT COLOUR*/
+  font-weight: bold;
+  font-size: 15px;
+  height: 36px;
+  width: 74px; 
+  border-radius: 18px; /*TRICK: Half of width or height (whichever is lower)*/
+  cursor: pointer; 
+  margin-left: 12px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+} 
+
+
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15); /*1st = horizontal position of shadow, 2nd = vertical position of shadow, 3rd = BLUR, 4th = color*/
+  /*rgba = 'a' refers to OPACITY TO COLOR (0-1) where 1 = max opaque, 0 = transparent*/
+  /*if box-shadow is used in main code of tweet-button, shadow will be permanent*/
+}
+
+
+.test-button {
+  background-color: rgb(200, 245, 240); 
+  color: rgb(10, 0, 0); /*TEXT COLOUR*/
+  font-weight: bold;
+  font-size: 15px;
+/*
+  height: 36px;
+  width: 74px; 
+*/
+/*adding height & weight causes overflow of text outside of box if it's long, so not use it
+Alternatively, PADDING adds space inside the box from various directions. With padding, no use of height & height*/
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  cursor: pointer; 
+  margin-left: 12px;
+  vertical-align: top; /*align all boxes to the top so all align on one straight line*/
+} 

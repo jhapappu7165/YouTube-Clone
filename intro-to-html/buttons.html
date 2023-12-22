@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!SOURCE Link: https://supersimple.dev/exercises/buttons>
+<!General Technique: (1) Create an element with HTML (2) Style it with CSS one-by-one>
+<!CSS = Cascading Style Sheets = change the appearance of HTML elements>
+<! STYLE tag output are not visible on the page directly. Inside this tag, write CSS code to modify appearance>
+<! VOID ELEMENT: without having a closing tag>
+
+<! CSS SELECTOR = which elements we're targeting (e.g., all buttons here)
+   CSS PROPERTY = what changing (e.g., background-color)
+   CSS VALUE = what changing our properties to (e.g.,red)
+   "px" = pixel value
+
+   HOVER = when pointer brought on button, its appearance changes slightly
+   TRANSITION = appearance transition between when cursor brought & removed from bottom
+   SHADOW = shadow seen when pointer brought on button
+   HEX - another way of measuring color - 1d9bf0 - first two(how much red), then 2(green), final 2(blue)
+   PADDING - Adding SPACE inside the box from different directions (top, bottom, left, right) (default = 1 top & bottom; 6 left & right)
+   MARGIN = Space between (outside) boxes in various directions
+   CSS Box Model - how much space an element takes up; how far it is away from other elements.
+   CSS Box Model consists of margin (out-of-box), border, padding, text
+
+   Use CSS code under "STYLE" tag inside "head" tag of HTML as it only changes appearance of HTML elements, not inserts anything on its own
+>
+
+<html>
+  <head> 
+    <title> 
+      Buttons Practice 
+    </title>
+
+    <link rel = "stylesheet" href = "buttons.css"> 
+    <! LOADS CSS file into HTML which may or may not be in the same folder - write complete path in case of different folder>
+    
+  </head>
+
+  <body>
+
+    <button class = "subscribe-button"> <!"class" attribute allows us to label a specific button>
+      SUBSCRIBE
+    </button> 
+    
+    <button class = "join-button">
+      JOIN
+    </button>
+    
+    <button class = "tweet-button">
+      Tweet
+    </button>
+    
+    <button class = "test-button">
+      This is a test button
+    </button>
+    
+  </body>
+</html>
+
+
+
+<!
+EXERCISES:
+- Margin & Padding together during hovering >

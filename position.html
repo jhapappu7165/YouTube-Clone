@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--CSS POSITION PRACTICE - HEADER, SIDEBAR-->
+<!--
+  position: "FIXED" => elements placed in the browser window - so NOT move when window is scrolled
+  position: ABSOLUTE => elements placed on the page - so move along the page when window is scrolled-->
+
+
+
+<html>
+  <head>
+    <title>Position Practice</title>
+  </head>
+
+  <body style=" /*applies to all body elements (by default)-individual body element can overwrite depending on respective requirements*/
+    height: 3000px;
+    padding-top: 100px;
+    padding-left: 90px;">
+
+    <!appears at top - HEADER>
+    <div style="
+      background-color: black;
+      color:white;
+      position: fixed; 
+      /*header section will be fixed even when page is scrolled up-down
+        With position-fixed, elements do NOT take up entire line (space) of page*/
+     
+      top: 10px; /*space between element and top of browser window*/
+      left: 0px; /*space between element and left of browser window*/
+      right: 50px; /*space covered by element stretches and remains up to assigned pixel to the right*/
+      bottom: 100px; /*space covered by element stretches and remains up to assigned pixel from bottom*/
+
+      z-index: 1;
+      /*determines which element appears at front-behind of browser window - any value possible (0,1,2,..)*/
+      /*Higher z-index (1) appears at front compared to that having lower z-index (0)*/
+
+      height: 50px;
+      /*use of height makes fixed(not resized when screen resized)*/
+      /*use of bottom makes resizable when screen is resized*/
+
+    "> header </div>
+
+
+
+    <!appears at side - SIDEBAR - use 'top','left','right' to place in appropriate place>
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed; /*should be stuck at side when screen is scrolled*/
+      left: 0;
+      bottom: 0; /*stuck to bottom*/
+      top: 65px;
+      width: 84px; /*remains fixed at side*/
+    "> 
+    SIDEBAR
+        <!RELATIVE position-absolute inside fixed-USES: time stamp on a youtube video thumbnail>
+          <div style = "
+
+            position: absolute;
+            background-color: red;
+            color: white;
+            top: 0px; /*RELATIVE- top from sidebar boundary, not top from webpage*/
+            right: 0px; /*RELATIVE- right from sidebar boundary, not webpage*/
+            z-index: 0; /*Lower z-index (0) appears behind on browser window compared to that having higher z-index (1)*/
+
+          "> X
+          </div>
+    </div>
+
+
+    <!ABSOLUTE position means that moves as screen is scrolled - not remain fixed like position: fixed>
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 60px;
+      right: 50px;
+      z-index: 0; /*Lower z-index (0) appears behind on browser window compared to that having higher z-index (1)*/
+
+    "> absolute
+    </div>
+
+
+
+    <div style = "
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static; 
+      "> div 1
+    </div>
+
+
+    <div style = "
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;
+      "> div 2 
+
+        <div style="
+          position: absolute; /*this element positioned relative to the first <div>*/
+          background-color: black;
+          color: white;
+          bottom: 10px; /*Xpx bottom from relative window, not (main) page*/
+          right: 10px;
+        "> 5:00
+      </div>
+    </div>
+  </body>
+</html>
